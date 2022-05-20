@@ -1,0 +1,631 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    /* background:transparent; */
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+ul {
+    list-style:none;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@font-face {
+    font-family: 'SimplyCricket';
+    src: url(fonts/SimplyCricket-Book.woff2) format('woff2'),
+    url(fonts/SimplyCricket-Book.woff) format('woff'),
+    url(fonts/SimplyCricket-Book.eot) format('embedded-opentype'),
+    url(fonts/SimplyCricket-Book.otf) format('opentype'),
+    url(fonts/SimplyCricket-Book.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SimplyCricket';
+    src: url(fonts/SimplyCricket-Medium.woff2) format('woff2'),
+    url(fonts/SimplyCricket-Medium.woff) format('woff'),
+    url(fonts/SimplyCricket-Medium.eot) format('embedded-opentype'),
+    url(fonts/SimplyCricket-Medium.otf) format('opentype'),
+    url(fonts/SimplyCricket-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'SimplyCricket';
+    src: url(fonts/SimplyCricket-Demibold.woff2) format('woff2'),
+    url(fonts/SimplyCricket-Demibold.woff) format('woff'),
+    url(fonts/SimplyCricket-Demibold.eot) format('embedded-opentype'),
+    url(fonts/SimplyCricket-Demibold.otf) format('opentype'),
+    url(fonts/SimplyCricket-Demibold.ttf) format('truetype');
+    font-style:normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'SimplyCricket';
+    src: url(fonts/SimplyCricket-Bold.woff2) format('woff2'),
+    url(fonts/SimplyCricket-Bold.woff) format('woff'),
+    url(fonts/SimplyCricket-Bold.eot) format('embedded-opentype'),
+    url(fonts/SimplyCricket-Bold.otf) format('opentype'),
+    url(fonts/SimplyCricket-Bold.ttf) format('truetype');
+    font-style:normal;
+    font-weight: bold;
+}
+
+* {
+    font-family:'SimplyCricket';;
+}
+
+header p{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    align-items: center;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#black-nav{
+    background-color: #404042;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10% 15px 10%;
+    color: white;
+    font-size: 13px;
+  
+}
+
+#black-nav img{
+    width: 10%;
+    margin-right: 10px;
+}
+
+#black-nav ul{
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#black-nav ul li a{
+    color: white;
+}
+
+#white-nav{
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10% 15px 10%;
+}
+
+#white-nav ul{
+    width: 53%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight: 600;
+    font-size: large;
+    
+}
+
+#white-nav img{
+    width: 15%;
+}
+  
+
+#hero{
+    background-color: #44A903;
+    display: flex;
+    padding-top: 3%;
+    
+}
+
+#hero img{
+    width: 45%;
+    /* min-width: 680px; */
+}
+
+#call-to-action{
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 5% 0 5% ;
+}
+
+#call-to-action h1:first-child{
+    color: #CEFFBA;
+    font-weight: normal;
+    font-size: 35px;
+    
+}
+
+#call-to-action h1:nth-child(2){
+    font-size: 90px;
+    font-weight: bold;
+
+}
+
+#call-to-action h2{
+    margin: 2% 0 3% 0;
+    color: #CEFFBA;
+    font-weight: normal;
+    font-size: 25px;
+
+}
+
+#call-to-action :nth-child(4){
+    font-size: 23px;
+    border-top: 4px solid #FFF ;
+    border-bottom: 4px solid #FFF ;
+    padding: 2% 0 2% 0;
+    line-height: 30px;
+}
+
+#call-to-action :last-child{
+    margin-top: 3%;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+#call-to-action :last-child a{
+    color: #000;
+    font-weight: bold;
+}
+
+section + section{
+    display: flex;
+    justify-content: center;
+    margin: 4% 0 4% 0;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+input{
+    border: thin solid rgb(228, 223, 223);
+    border-radius: 6px ;
+    height: 45px;
+    margin: 1% 10%;
+    padding-left: 2%;
+   
+}
+
+label{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 3% 10% 0 10%;
+
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:2px solid #cccccc;
+    margin:5% 0 3% 0;
+    padding:0;
+}
+
+form h2{
+    margin: 0 10% 2% 10%;
+    font-size: 33px;
+    color: #61A731;
+}
+#rules{
+    height:120px;
+    margin: 0 10%;
+    padding: 1.5%;
+    border:1px solid #ccc;
+    border-radius: 17px;
+    overflow:auto;
+} 
+
+form #checks{
+    justify-content: center;
+}
+
+form #checks input{
+    margin:1% 0 1% 10%;
+    width: 30px;
+}
+
+form #checks label{
+    margin: 1% 1%;
+    font-size: 14px;
+}
+
+#official{
+    text-decoration: underline;
+}
+
+#optional{
+    margin-left: 13%;
+}
+
+select{
+    border: thin solid rgb(228, 223, 223);
+    border-radius: 6px ;
+    height: 45px;
+    margin: 1% 10%;
+    padding-left: 2%;
+    background-color: #FFF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../images/up-and-down-arrows.svg") 96% / 3% no-repeat rgb(255, 255, 255);
+}
+
+[type=submit]{
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    padding-left:0;
+    align-self: end;
+    background-color: #336FB6;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #404042;
+    color: white;
+    padding: 30px 10% 20px 10%;
+    
+}
+
+footer div:first-child{
+    font-size: 10px;
+    width: 36%;
+    
+}
+
+footer ul {
+    width: 19%;
+    
+}
+
+footer :last-child{
+    align-items: center;
+    
+}
+
+footer h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    
+    
+}
+
+footer h4{
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    
+}
+
+.facebook img, .twitter img, .instagram img, .youtube img{
+    width: 5%;
+    margin-left: 4% ;
+    
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: lightgray;
+    border-radius: 18px;
+    height: 90%;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: #61A731;
+    border-radius: 10px ;
+    height: 100px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#thank-you{
+    background-image: url(../images/thanksBackground.png);
+    background-size: cover;
+    background-position:center;
+    height: 950px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white
+}
+
+#thank-you h1{
+    font-size: 135px;
+    margin-top: 9%;
+}
+
+#thank-you h2{
+    font-size: 43px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 2%;
+}
+
+#thank-you h3{
+    font-size: 33px;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: normal;
+    line-height: 40px;
+}
+
+#thank-you div{
+    width: 30%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#thank-you button{
+    width: 40%;
+    height: 55px;
+    text-align: center;
+    padding-left:0;
+    background-color: #336FB6;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 6px ;
+}
+
+#offer{
+    width: 100%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media only screen and (max-width:1400px){   
+    
+    #black-nav{
+        padding: 15px 5% 15px 10%;
+        font-size: 13px;
+    }
+
+    #white-nav{
+        padding: 15px 5% 15px 10%;
+    }
+
+    #hero img{
+        min-width: 631px;
+    }
+
+    #call-to-action{
+        padding: 0 2% 0 2% ;
+    }
+    
+
+    #call-to-action h1:first-child{
+        font-size: 29px;
+        
+    }
+    
+    #call-to-action h1:nth-child(2){
+        font-size: 72px;
+    }
+    
+    #call-to-action h2{
+        margin: 2% 0 3% 0;
+        font-size: 20px;
+    }
+    
+    #call-to-action :nth-child(4){
+        font-size: 17px;
+        padding: 2% 0 2% 0;
+    }
+    
+    #call-to-action :last-child{
+        margin-top: 3%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+
+    #black-nav ul{
+        width: 50%;
+    }
+
+    #white-nav ul{
+        width: 65%;
+        font-size: medium;
+    }
+    #hero{
+        flex-direction: column-reverse;
+    }
+
+    #hero img{
+        width: 100%;
+        align-self: center;
+    }
+
+    #call-to-action{
+        padding: 2% 10% 2% 10% ;
+    }
+}
+
+@media only screen and (max-width:920px){
+
+    #rules{
+        font-size: small;
+    }
+
+    form #checks label{
+        font-size: 11px;
+    }
+
+    footer{
+        padding: 30px 5% 20px 10%;
+    }
+
+    footer div:first-child{
+        font-size: 7px;
+        width: 30%;
+    }
+
+    footer ul {
+        width: 10%;
+        font-size: 10px;
+    }
+
+    footer h3{
+        font-size: 15px
+    }
+
+    footer h4{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:760px){
+
+    #black-nav{
+        padding: 15px 2% 15px 2%;
+        font-size: 11px;
+    }
+
+    #black-nav ul{
+        width:85%
+    }
+
+    #white-nav{
+        padding: 15px 2% 15px 2%;
+    }
+
+    #white-nav ul{
+        font-size: 12px;
+        width: 80%;
+    }
+
+    #thank-you{
+        height: 750px;
+    }
+
+    #thank-you h1{
+        font-size: 85px;
+        text-align: center;
+    }
+
+    #thank-you h2{
+        font-size: 18px;
+        line-height: 25px
+    }
+
+    #thank-you h3{
+        font-size: 14px;
+    }
+
+    #thank-you div{
+        width: 50%;
+    }
+
+    #thank-you button{
+        
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width:630px){
+
+    #black-nav {
+        font-size: 9px;
+    }
+
+    #white-nav{
+        padding: 1.5% 2%;
+    }
+
+    #white-nav img{
+        width: 90px;
+        height: 24px;
+        align-self:center;
+    }
+
+    #white-nav ul{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        font-size: 9px;
+    }
+
+    #white-nav li{
+        margin-top: 5px;
+    }
+  
+    #hero img{
+        min-width: auto;
+    }
+
+    #call-to-action h1:first-child{
+        font-size: 21px;
+    }
+    
+    #call-to-action h1:nth-child(2){
+        font-size: 44px;
+    }
+    
+    #call-to-action h2{
+        font-size: 14px;
+    }
+    
+    #call-to-action :nth-child(4){
+        font-size: 12px;
+    }
+    
+    #call-to-action :last-child{
+        font-size: 14px;
+    }
+
+    [type=submit]{
+        width: 40%;
+        height: 40px;
+        align-self: center;
+    }
+}
